@@ -45,6 +45,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{illustris-resume-openfont}
+\usepackage{hyperref}
+\usepackage{xcolor,soul,lipsum}
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
 
 
 \begin{document}
@@ -82,8 +85,8 @@
 
 \section{Education} 
 
-\subsection{Birla Institute of\newline Technology \& Science, Pilani, Goa Campus}
-\descript{B.E. (HONS.) Electronics \& Electrical Engineeringe}
+\subsection{Birla Institute of\newline Technology \& Science,\newline Pilani, Goa Campus}
+\descript{B.E. (hons.) Electronics \& Electrical Engineering}
 \location{Expected May 2018 | Goa, India}
 %{CGPA: 5.967}
 \sectionsep
@@ -105,8 +108,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-\href{https://github.com/illustris}{github.com/\custombold{illustris}} \\
-\href{https://linkedin.com/in/illustris/}{linkedin.com/in/\custombold{illustris}} \\
+\href{https://github.com/illustris}{\color{blue} \myul[blue] {github.com/illustris}} \\
+\href{https://linkedin.com/in/illustris/}{\color{blue} \myul[blue] {linkedin.com/in/illustris}} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
@@ -116,12 +119,12 @@
 
 \subsection{Ongoing}
 %\descript{Expected Completion : Dec '16}
-Mobile Telecom Networks \textbullet{} Analog Electronics \textbullet{} 
-Power Electronics \textbullet{} Power Systems
+Real Time Systems
 \sectionsep
 
 \subsection{Completed}
-Microprocessor and Interfacing \textbullet{} Computer Architecture \textbullet{} Cryptography \textbullet{} Digital Design \textbullet{} Control Systems \textbullet{} Data Communication Networks \textbullet{} Microelectronics \textbullet{} Computer Programming \textbullet{} Analog and Digital VLSI Design \textbullet{} Communication Systems
+Mobile Telecom Networks \textbullet{} Analog Electronics \textbullet{} 
+Power Electronics \textbullet{} Power Systems \textbullet{} Microprocessor and Interfacing \textbullet{} Computer Architecture \textbullet{} Cryptography \textbullet{} Digital Design \textbullet{} Control Systems \textbullet{} Data Communication Networks \textbullet{} Microelectronics \textbullet{} Computer Programming \textbullet{} Analog and Digital VLSI Design \textbullet{} Communication Systems
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -158,7 +161,7 @@ Reverse Engineering \textbullet{} Data Forensics \textbullet{} Network Forensics
 \location{Dec 2016 - Jan 2017 | IIT Madras, India}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}\item Learned Bluespec HDL and worked on 32 bit 3 stage RISC-V processor designs
-\item Updated \href{https://github.com/illustris/freertos-riscv}{FreeRTOS} to updated privileged instruction set architecture specifications on RISC-V
+\item Updated \href{https://github.com/illustris/freertos-riscv}{\color{blue} \myul[blue] {FreeRTOS}} to revised privileged instruction set architecture specifications on RISC-V
 \end{tightemize}
 \sectionsep
 
@@ -176,9 +179,9 @@ Reverse Engineering \textbullet{} Data Forensics \textbullet{} Network Forensics
 
 \section{Project Work}
 \runsubsection{Multi-level Mixed Criticality Realtime Scheduling}
-\descript{| Design Oriented Project}
+\descript{| Design Project}
 \location{August 2016 – Present | Goa, India}
-Working along with \textbf{\href{http://universe.bits-pilani.ac.in/goa/biju/profile}{Dr. Biju K Raveendran}} to design and implement multilevel mixed criticality scheduling algorithms in Real Time Operating Systems
+Working with \textbf{\href{http://universe.bits-pilani.ac.in/goa/biju/profile}{\color{blue} \myul[blue] {Dr. Biju K Raveendran}}} to design and implement multilevel mixed criticality scheduling algorithms in Real Time Operating Systems
 \sectionsep
 
 %\runsubsection{Hyperloop India}
@@ -190,7 +193,7 @@ Working along with \textbf{\href{http://universe.bits-pilani.ac.in/goa/biju/prof
 \runsubsection{Hyperloop India}
 \descript{| Electronic Systems Lead}
 \location{May 2016 - Present | Goa, India}
-Leading the team working on the electronics and control systems of the Hyperloop pod for the SpaceX Hyperloop Design Competition. Final design report reviewed and accepted by SpaceX
+Leading the team working on the electronics and control systems of the Hyperloop pod for the SpaceX Hyperloop Design Competition
 %\href{http://vcard.hsrco.net/}{http://vcard.hsrco.net/}
 %\sectionsep
 
@@ -200,6 +203,7 @@ Leading the team working on the electronics and control systems of the Hyperloop
 
 \section{Recent Achievements} 
 \begin{tabular}{rll}
+
 2016    & 168\textsuperscript{th} rank(global)    & Google CTF 2016 \\
 2016    & 98\textsuperscript{th} rank(global) & Trend Micro CTF 2016 \\
 2016    & 57\textsuperscript{th} rank(global) & Sunshine CTF 2016 \\
@@ -209,8 +213,8 @@ Leading the team working on the electronics and control systems of the Hyperloop
 %2012    & top 1000  & National Science Olympiad \\
 %2012    & top 250   & National Science Olympiad \\
 2011    & 99.7628 percentile  & CBSE Proficiency exam \\
-2009    & NTSE & scholar \\
-2009    & 2\textsuperscript{nd} rank (national)    & IKEN Scientifica Science competition \\
+%2009    & NTSE & scholar \\
+%2009    & 2\textsuperscript{nd} rank (national)    & IKEN Scientifica Science competition \\
 
 \end{tabular}
 %\sectionsep
